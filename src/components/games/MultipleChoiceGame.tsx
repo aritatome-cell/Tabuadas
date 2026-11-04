@@ -4,6 +4,7 @@ import { AllowedTableNumber, ALLOWED_TABLES, MultipleChoiceQuestion } from '../.
 import { playSuccessSound, playGentleTryAgainSound, playPopSound, playVictoryFanfare } from '../../utils/audio';
 import { SUCCESS_MESSAGES } from '../../data/multiplicationData';
 import { Sparkles, CheckCircle2, XCircle, ChevronRight, RotateCcw, Trophy } from 'lucide-react';
+import { IMAGES } from '../../assets/images';
 
 interface MultipleChoiceGameProps {
   onEarnStars: (amount: number) => void;
@@ -282,7 +283,7 @@ export const MultipleChoiceGame: React.FC<MultipleChoiceGameProps> = ({
         <div className="bg-white rounded-3xl p-8 border border-amber-200/80 shadow-lg text-center space-y-6 animate-pop">
           <div className="w-24 h-24 mx-auto rounded-3xl overflow-hidden border-4 border-amber-300 shadow-md">
             <img
-              src="/src/assets/images/trofeu_campeao_tabuada_1793818382326.jpg"
+              src={IMAGES.trophy}
               alt="Troféu Campeão da Tabuada"
               className="w-full h-full object-cover"
               referrerPolicy="no-referrer"

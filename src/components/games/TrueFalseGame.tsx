@@ -3,6 +3,7 @@ import confetti from 'canvas-confetti';
 import { AllowedTableNumber, ALLOWED_TABLES, TrueFalseQuestion } from '../../types/math';
 import { playSuccessSound, playGentleTryAgainSound, playPopSound } from '../../utils/audio';
 import { Check, X, Sparkles, ChevronRight, HelpCircle, Trophy } from 'lucide-react';
+import { IMAGES } from '../../assets/images';
 
 interface TrueFalseGameProps {
   onEarnStars: (amount: number) => void;
@@ -166,7 +167,7 @@ export const TrueFalseGame: React.FC<TrueFalseGameProps> = ({
           <div className="flex items-center justify-center gap-3">
             <div className="w-14 h-14 rounded-2xl overflow-hidden border-2 border-amber-300 shadow-xs shrink-0">
               <img
-                src="/src/assets/images/mascote_pipas_robo_1793818382087.jpg"
+                src={IMAGES.mascotPipas}
                 alt="Pipas"
                 className="w-full h-full object-cover"
                 referrerPolicy="no-referrer"

@@ -3,6 +3,7 @@ import { AllowedTableNumber, ALLOWED_TABLES } from '../types/math';
 import { TABLES_INFO, MATRIX_OBJECTS } from '../data/multiplicationData';
 import { Volume2, Lightbulb, Sparkles, BookOpen, ChevronRight, HelpCircle } from 'lucide-react';
 import { playPopSound, speakMathPhrase } from '../utils/audio';
+import { IMAGES } from '../assets/images';
 
 interface ExploreTabuadaProps {
   selectedTable: AllowedTableNumber;
@@ -45,7 +46,7 @@ export const ExploreTabuada: React.FC<ExploreTabuadaProps> = ({
         <div className="relative z-10 flex flex-col md:flex-row items-center gap-6">
           <div className="w-28 h-28 sm:w-36 sm:h-36 shrink-0 rounded-2xl overflow-hidden border-4 border-white/60 shadow-md bg-white">
             <img
-              src="/src/assets/images/mascote_pipas_robo_1793818382087.jpg"
+              src={IMAGES.mascotPipas}
               alt="Mascote Robô Pipas da Tabuada"
               className="w-full h-full object-cover"
               referrerPolicy="no-referrer"

@@ -3,6 +3,7 @@ import confetti from 'canvas-confetti';
 import { AllowedTableNumber, ALLOWED_TABLES } from '../../types/math';
 import { playSuccessSound, playGentleTryAgainSound, playPopSound, playVictoryFanfare } from '../../utils/audio';
 import { Play, RotateCcw, Zap, Trophy, Timer } from 'lucide-react';
+import { IMAGES } from '../../assets/images';
 
 interface SpeedChallengeProps {
   onEarnStars: (amount: number) => void;
@@ -108,7 +109,7 @@ export const SpeedChallenge: React.FC<SpeedChallengeProps> = ({
       <div className="relative overflow-hidden rounded-3xl border border-amber-200/80 shadow-xs bg-slate-900 text-white">
         <div className="absolute inset-0 opacity-40">
           <img
-            src="/src/assets/images/foguetao_espacial_matematica_1793818382852.jpg"
+            src={IMAGES.rocket}
             alt="Foguetão espacial da tabuada"
             className="w-full h-full object-cover"
             referrerPolicy="no-referrer"
