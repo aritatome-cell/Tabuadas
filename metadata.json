@@ -1,0 +1,6 @@
+{
+  "name": "A Aventura da Tabuada - 3.º Ano",
+  "description": "Aprende e diverte-te com a tabuada do 1, 2, 3, 4, 5, 6 e 10! Jogos de correspondência, verdadeiro ou falso, quizzes e feedback imediato para alunos do 3.º ano.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
