@@ -57,13 +57,13 @@ git remote add origin https://github.com/O-TEU-UTILIZADOR/tabuada-3ano.git
 git push -u origin main
 ```
 
-### Passo 3: Ativar o GitHub Pages (Automático!)
-1. No teu repositório no GitHub, vai ao separador **Settings** (Definições).
+### Passo 3: Ativar o GitHub Pages
+1. No teu repositório no GitHub, vai ao separador **Settings** (Definições) no topo.
 2. No menu lateral esquerdo, clica em **Pages**.
-3. Na secção **Build and deployment** -> **Source**, seleciona:
-   - **GitHub Actions**
-4. Pronto! O GitHub irá executar automaticamente a compilação e o teu website ficará online em poucos segundos no endereço:
-   - `https://O-TEU-UTILIZADOR.github.io/tabuada-3ano/`
+3. Na secção **Build and deployment** -> **Branch**, certifica-te de que está selecionada a branch `gh-pages` e a pasta `/ (root)`.
+4. Clica em **Save** (se aplicável).
+5. Pronto! O teu website estará online no endereço:
+   - `https://aritatome-cell.github.io/Tabuadas/`
 
 ---
 
